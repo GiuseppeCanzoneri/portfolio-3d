@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-3d-gilt-iota.vercel.app/sitemap.xml

@@ -3,14 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Giuseppe Canzoneri · Web Developer a Torino</title>
-<meta name="description" content="Giuseppe Canzoneri, web developer a Torino. Siti web con animazioni 3D, esperienze scroll e web app su misura.">
+<title>Giuseppe Canzoneri · Web Developer a Torino | Siti 3D e animati</title>
+<meta name="description" content="Giuseppe Canzoneri, sviluppatore web a Torino. Realizzo siti web 3D e animati, landing page e web app su misura per aziende e attività. Incontri anche di persona.">
+<link rel="canonical" href="https://portfolio-3d-gilt-iota.vercel.app/">
+<meta name="author" content="Giuseppe Canzoneri">
+<meta name="theme-color" content="#0b0b0a">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://portfolio-3d-gilt-iota.vercel.app/">
 <meta property="og:title" content="Giuseppe Canzoneri · Web Developer a Torino">
-<meta property="og:description" content="Siti web con animazioni 3D, esperienze scroll e web app su misura.">
-<meta property="og:image" content="img/hero-poster.jpg">
+<meta property="og:description" content="Siti web 3D e animati, landing page e web app su misura. Base a Torino.">
+<meta property="og:image" content="https://portfolio-3d-gilt-iota.vercel.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="img/hero-poster.jpg" fetchpriority="high">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Person","@id":"https://portfolio-3d-gilt-iota.vercel.app/#giuseppe","name":"Giuseppe Canzoneri","jobTitle":"Web Developer","url":"https://portfolio-3d-gilt-iota.vercel.app/",
+     "image":"https://portfolio-3d-gilt-iota.vercel.app/img/og.jpg","email":"mailto:gcanzoneri3@gmail.com","telephone":"+39 329 565 6116",
+     "worksFor":{"@type":"Organization","name":"Pshark srl"},
+     "address":{"@type":"PostalAddress","addressLocality":"Torino","addressRegion":"TO","addressCountry":"IT"},
+     "knowsAbout":["Sviluppo web","Siti web 3D","Animazioni web","React","Three.js","Java","Spring Boot","Node.js"],
+     "sameAs":["https://www.linkedin.com/in/giuseppe-canzoneri-94828b270/","https://github.com/GiuseppeCanzoneri","https://www.instagram.com/giuseppe_canzoneri/"]},
+    {"@type":"ProfessionalService","@id":"https://portfolio-3d-gilt-iota.vercel.app/#servizi","name":"Giuseppe Canzoneri · Sviluppo siti web a Torino","url":"https://portfolio-3d-gilt-iota.vercel.app/",
+     "image":"https://portfolio-3d-gilt-iota.vercel.app/img/og.jpg","telephone":"+39 329 565 6116","email":"gcanzoneri3@gmail.com","founder":{"@id":"https://portfolio-3d-gilt-iota.vercel.app/#giuseppe"},
+     "address":{"@type":"PostalAddress","addressLocality":"Torino","addressRegion":"TO","addressCountry":"IT"},
+     "areaServed":[{"@type":"City","name":"Torino"},{"@type":"Country","name":"Italia"}],
+     "hasOfferCatalog":{"@type":"OfferCatalog","name":"Servizi","itemListElement":[
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Siti web 3D e animati"}},
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Landing page"}},
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Web app su misura"}}]}}
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
 <style>
   :root{
     --ink:#0b0b0a; --ink-2:#151513; --line:#2a2925;
@@ -67,10 +102,10 @@
   .hero-progress{position:absolute;left:0;bottom:0;height:2px;background:var(--signal);width:0}
   .hero h1{font-weight:800;font-size:clamp(3.2rem,13.5vw,13rem);line-height:.86;letter-spacing:-.055em;text-transform:uppercase;mix-blend-mode:difference}
   .hero h1 .row{display:block;overflow:hidden}
-  .hero h1 .row span{display:inline-block;transform:translateY(105%);animation:rise 1.1s cubic-bezier(.2,.8,.1,1) forwards}
+  .hero h1 .row span{display:inline-block;transform:translateY(55%);opacity:.35;animation:rise .9s cubic-bezier(.2,.8,.1,1) forwards}
   .hero h1 .row:nth-child(2) span{animation-delay:.12s}
   .hero h1 .indent{padding-left:clamp(0px,14vw,240px)}
-  @keyframes rise{to{transform:none}}
+  @keyframes rise{to{transform:none;opacity:1}}
   .hero-meta{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-top:3vh;opacity:0;animation:fade 1s .7s forwards}
   .hero-meta p{max-width:34ch;font-size:clamp(1rem,1.5vw,1.25rem);color:var(--bone)}
   .hero-meta .it{color:var(--signal-soft)}
@@ -212,7 +247,7 @@
       <span class="row indent"><span>Canzoneri</span></span>
     </h1>
     <div class="hero-meta">
-      <p>Costruisco siti che <span class="it">si muovono</span>: esperienze 3D, animazioni allo scroll e web app su misura.</p>
+      <p>Web developer a Torino. Costruisco siti che <span class="it">si muovono</span>: esperienze 3D, animazioni allo scroll e web app su misura.</p>
       <div class="mono" style="text-align:right">
         <div class="roles"><ul><li>Web Developer</li><li>Siti 3D &amp; animati</li><li>Frontend · React</li><li>Full Stack · Java</li></ul></div>
         <div style="color:var(--bone-dim);margin-top:6px">Scorri ↓</div>
@@ -311,10 +346,10 @@
 <section id="servizi" style="padding-top:0">
   <div class="sec-head rv">
     <h2>Cosa <span class="it">faccio</span></h2>
-    <span class="mono" style="color:var(--bone-dim)">Servizi</span>
+    <span class="mono" style="color:var(--bone-dim)">Siti web a Torino e online</span>
   </div>
   <div class="services rv">
-    <div class="svc"><span class="mono">01</span><div><h3>Siti 3D &amp; animati</h3><p>Vetrine che raccontano la tua attività con video guidati dallo scroll, scene 3D e micro-animazioni.</p></div></div>
+    <div class="svc"><span class="mono">01</span><div><h3>Siti 3D &amp; animati</h3><p>Siti web 3D per aziende e attività di Torino e non solo. Vetrine che raccontano la tua attività con video guidati dallo scroll, scene 3D e micro-animazioni.</p></div></div>
     <div class="svc"><span class="mono">02</span><div><h3>Landing page</h3><p>Una pagina sola, veloce e d'impatto, per lanciare un prodotto, un evento o una promozione.</p></div></div>
     <div class="svc"><span class="mono">03</span><div><h3>Web app su misura</h3><p>Prenotazioni, aree riservate, gestionali: frontend React e backend Java o Node.</p></div></div>
   </div>
@@ -353,10 +388,27 @@
   const inner = document.getElementById("heroInner"), claim = document.getElementById("claim"), bar = document.getElementById("heroBar");
   const TOTAL = 121, imgs = [];
   let shown = -1, target = 0, smooth = 0;
-  for (let i = 0; i < TOTAL; i++){ const im = new Image(); im.src = "frames/f" + String(i).padStart(3,"0") + ".webp"; imgs.push(im);
-    if (i === 0) im.onload = () => paint(0, true); }
+  const src = i => "frames/f" + String(i).padStart(3,"0") + ".webp";
+  for (let i = 0; i < TOTAL; i++) imgs.push(new Image());
+  imgs[0].onload = () => paint(0, true); imgs[0].src = src(0);
+  // il resto dei frame arriva dopo il caricamento della pagina: prima uno ogni 6, poi i mancanti
+  let started = false;
+  function loadRest(){
+    if (started) return; started = true;
+    const order = [];
+    for (const step of [6, 2, 1]) for (let i = 0; i < TOTAL; i += step) if (!order.includes(i)) order.push(i);
+    let k = 0;
+    (function next(){ const batch = order.slice(k, k += 6); if (!batch.length) return;
+      let left = batch.length; batch.forEach(i => { const im = imgs[i]; if (im.src){ if (!--left) next(); return; }
+        im.onload = im.onerror = () => { if (!--left) next(); }; im.src = src(i); }); })();
+  }
+  addEventListener("load", () => setTimeout(loadRest, 300));
+  addEventListener("scroll", loadRest, {once:true, passive:true});
+  const ready = im => im.src && im.complete && im.naturalWidth;
   function paint(i, force){
-    const im = imgs[i]; if (!im.complete || !im.naturalWidth) return;
+    // se il frame non è ancora arrivato usa il più vicino già caricato
+    for (let d = 0; d < TOTAL && !ready(imgs[i]); d++){ if (ready(imgs[i-d] || {})) { i -= d; break; } if (ready(imgs[i+d] || {})) { i += d; break; } }
+    const im = imgs[i]; if (!ready(im)) return;
     if (i === shown && !force) return; shown = i;
     const w = cv.width = cv.clientWidth * Math.min(devicePixelRatio,2), h = cv.height = cv.clientHeight * Math.min(devicePixelRatio,2);
     const r = Math.max(w/im.naturalWidth, h/im.naturalHeight), iw = im.naturalWidth*r, ih = im.naturalHeight*r;
